@@ -1,51 +1,74 @@
-# AuraSky — Premium Atmospheric Weather Application 🌤️
+# WeatherSphere 🌤️
 
-A cutting-edge, human-crafted Weather Web Application built purely with **Vanilla HTML5, CSS3, and JavaScript**. AuraSky blends atmospheric sky-blur aesthetics, Apple Weather-style visuals, and fluid Bento Grid telemetry to deliver an immersive weather experience across mobile, tablet, and desktop devices.
+A modern, responsive weather forecast application built purely with **Vanilla HTML5, CSS3, and JavaScript**. Features an atmospheric sky blur design, real-time weather telemetry, 24-hour hourly predictions, and a comprehensive 5-day outlook.
 
----
-
-## ✨ Key Features & Highlights
-
-- **🌌 Atmospheric Sky Blur & Dynamic Aurora**: Floating glowing orbs with frosted glassmorphism (`backdrop-filter: blur(28px)`), dynamically shifting ambient light based on current weather conditions (sunny, rainy, thunderstorm, snow, cloudy, or night).
-- **🌓 Light & Dark Modes**: Seamless theme switching with smooth transitions and persistent state stored in `localStorage`.
-- **🌡️ Live Units Switcher**: Toggle instantly between Celsius (°C) and Fahrenheit (°F) across all telemetry and forecast cards.
-- **🕒 Real-Time Local City Time**: Synchronized clock calculating the city's exact local time and date based on its UTC timezone offset.
-- **🛰️ Smart Search Hub**:
-  - Instant city/region search with auto-clear and keyboard shortcuts.
-  - One-click **My Location** button leveraging browser GPS Geolocation.
-  - Quick-pick **Popular City Chips** (New Delhi, London, Tokyo, New York, Dubai, Paris, Sydney).
-  - Dedicated **Precision Coordinates Modal** with validation and quick geographic landmark presets.
-- **☀️ Sun Schedule & Solar Arc**: Visual curve tracing the live position of the sun between sunrise and sunset, displaying total daylight hours.
-- **⏱️ 24-Hour Hourly Forecast Strip**: Horizontal scrolling strip with custom vector weather icons, temperatures, and rain probability indicators.
-- **📅 Apple-Style 5-Day Outlook**: Daily weather summaries featuring dynamic relative temperature gradient bars (min/max range).
-- **📊 Detailed Bento Telemetry**:
-  - **Wind**: Speed (km/h or mph), rotating compass needle pointing in real degrees, and gust speeds.
-  - **Humidity**: Percentage progress bar and dew point comfort indicators.
-  - **Barometric Pressure**: Atmospheric pressure in hPa with high/low system classifications.
-  - **Visibility**: Accurate distance in km or miles.
-  - **Cloud Coverage**: Overcast percentage and sky condition status.
-  - **Thermal Comfort**: "Feels like" comparison explaining the perceived difference.
-- **⭐ Saved Locations Drawer**: Slide-over drawer to save, view, and manage your favorite cities with 1-click weather inspection.
-- **🔔 Custom Floating Toast Hub**: Modern, unobtrusive status toasts instead of intrusive browser `alert()` popups.
-- **📱 100% Responsive Design**: Pixel-perfect layout tailored for mobile phones, tablets, laptops, and ultra-wide displays.
+🔗 **Live Demo**: [https://sanjeet3065.github.io/Weather-Application/](https://sanjeet3065.github.io/Weather-Application/)
 
 ---
 
-## 🚀 How to Run Locally
+## 📸 Overview
 
-You can open the project in any modern web browser directly:
-
-1. Double click `index.html` to open it in your browser.
-2. Or run a local development server using Python:
-   ```bash
-   python -m http.server 3000
-   ```
-   and visit `http://localhost:3000` in your browser.
+WeatherSphere delivers hyper-local weather insights with a clean, glassmorphic Bento Grid interface. It adapts its sky ambiance dynamically based on live conditions and daylight cycles, offering a fast, lightweight, and framework-free user experience.
 
 ---
 
-## 🛠️ Technology Stack
-- **HTML5**: Semantic, accessible markup.
-- **Vanilla CSS3**: Design tokens, frosted glassmorphism, fluid bento grids, and keyframe animations.
-- **Vanilla JavaScript (ES6+)**: Asynchronous API telemetry, dynamic SVG generation, and state management.
-- **Weather API**: Powered by OpenWeatherMap API.
+## ✨ Features
+
+- **Real-Time Weather Metrics**: Live temperature, high/low spread, perceived "feels like" temperature, and weather condition badges.
+- **5-Day Extended Forecast**: Daily condition summaries (rain, clouds, clear sky, etc.) with visual min-to-max temperature range bars.
+- **24-Hour Hourly Outlook**: Smooth horizontal scroll showcasing 3-hour temperature intervals and precipitation probabilities.
+- **Detailed Bento Telemetry**:
+  - **Wind**: Speed (km/h or mph), rotating compass needle with cardinal direction, and wind gusts.
+  - **Humidity**: Relative humidity percentage and dew point comfort indicators.
+  - **Barometric Pressure**: Atmospheric pressure in hPa with high/low system identification.
+  - **Visibility**: Clear distance metrics in kilometers or miles.
+  - **Cloud Coverage**: Overcast percentages.
+  - **Thermal Comfort**: Perceived thermal differential based on wind chill and humidity.
+- **Sun Schedule**: Solar arc curve tracing the live position of the sun between sunrise and sunset, including total daylight hours.
+- **Multi-Mode Location Search**:
+  - Global city and region search with instant results.
+  - One-click **My Location** button powered by browser GPS geolocation.
+  - Precision **Coordinates Finder** with latitude/longitude inputs and landmark presets.
+  - Quick-pick popular city chips (London, Tokyo, New Delhi, New York, etc.).
+- **Theme Modes**: Default **Sky Blue (Light)** atmospheric mode with a toggle for **Celestial Midnight (Dark)** mode (saved in `localStorage`).
+- **Unit Conversion**: Seamless one-tap toggle between Celsius (°C) and Fahrenheit (°F).
+- **Saved Locations**: Slide-over drawer to bookmark and monitor favorite cities across the globe.
+
+---
+
+## 🛠️ Tech Stack
+
+- **HTML5**: Semantic and accessible markup.
+- **Vanilla CSS3**: Custom design tokens, frosted glassmorphism (`backdrop-filter`), dynamic sky gradients, and fluid responsive grid.
+- **Vanilla JavaScript (ES6+)**: Fetch API, real-time timezone calculations, vector SVG icon generation, and state persistence.
+- **API**: Powered by [OpenWeatherMap](https://openweathermap.org/).
+
+---
+
+## 🚀 Getting Started
+
+No build tools, bundlers, or package managers required.
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/Sanjeet3065/Weather-Application.git
+```
+
+### 2. Run Locally
+Open `index.html` directly in your web browser, or launch a local server:
+
+```bash
+# Using Python
+python -m http.server 3000
+
+# Or using Node.js / npx
+npx serve .
+```
+
+Visit `http://localhost:3000` in your browser.
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
